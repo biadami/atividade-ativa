@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple MacBook Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+    function validar() {
+        var nome = document.getElementById("resposta");
+        if (resposta.value == "") {
+            alert("Dados não informados");
+        } else {
+            alert("Obrigado(a) por responder")
+        }
+    }
+    // function enviar() {
+    //     alert("Obrigado(a) por responder!")
+    // }
+</script>
+
+<body bgcolor="D3D3D3">
+    <h1>Pesquisa de opinião sobre MACBOOK PRO 2021</h1>
+
+    <p>
+        <img src="img/macbook.jpg" title="macbookpro" height="300" width="600">
+    </p>
+
+    <table>
+       <tbody>
+           <th id="title">Dados Pessoais:</th>
+            <tr>
+                <td id="pergunta">Nome: <input id="resposta" type="text"  name="nome" maxlength="55"></td>
+                <td id="pergunta">Sexo: <select name="sexo">
+                    <option value="1">Masculino</option>
+                    <option value="2">Feminino</option>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="pergunta">Faixa etária:
+                    <input type="radio" name="faixaEtaria" value="A"> Menor de idade
+                    <input type="radio" name="faixaEtaria" value="B"> 18 a 29 anos
+                    <input type="radio" name="faixaEtaria" value="C"> 30 a 39 anos
+                    <input type="radio" name="faixaEtaria" value="D"> 40 a 49 anos
+                    <input type="radio" name="faixaEtaria" value="E"> 50 a 59 anos
+                    <input type="radio" name="faixaEtaria" value="F"> + 60 anos
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <tbody>
+            <th id="title">Perguntas:</th>
+                <tr>
+                 <td id="pergunta">Em uma escala de 0 a 10 (sendo 0 muito improvável e 10 muito provável), o quanto você recomendaria o nosso produto para um amigo ou familiar?
+                    <select name="question1">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                   
+                 </td>
+             </tr>
+
+             <tr>
+                <td id="pergunta">Você compraria este produto novamente?
+                    <select name="question2">
+                       <option value="s">Sim</option>
+                       <option value="T">Talvez</option>
+                       <option value="N">Não</option>
+                </td>
+            </tr>
+
+            <tr>
+                <td id="pergunta">
+                    Você considera que nosso produto atende às suas necessidades?
+                    <input id="resposta" type="text" name="question3" maxlength="150">
+                </td>
+            </tr>
+
+            <tr>
+                <td id="pergunta">Você está satisfeito com o nosso produto?
+                    <input type="radio" name="grausatisfacao" value="Mi"> Muito insatisfeito
+                    <input type="radio" name="grausatisfacao" value="Pi"> Pouco insatisfeito
+                    <input type="radio" name="grausatisfacao" value="I"> Insatisfeito
+                    <input type="radio" name="grausatisfacao" value="S"> Satisfeito
+                    <input type="radio" name="grausatisfacao" value="Ps"> Pouco Satisfeito
+                    <input type="radio" name="grausatisfacao" value="Ms"> Muito Satisfeito
+                </td>
+            </tr>
+            <tr>
+                <td id="pergunta">Você está satisfeito com a qualidade do nosso produto?
+                    <input type="radio" name="grausatisfacao" value="Mi"> Muito insatisfeito
+                    <input type="radio" name="grausatisfacao" value="Pi"> Pouco insatisfeito
+                    <input type="radio" name="grausatisfacao" value="I"> Insatisfeito
+                    <input type="radio" name="grausatisfacao" value="S"> Satisfeito
+                    <input type="radio" name="grausatisfacao" value="Ps"> Pouco Satisfeito
+                    <input type="radio" name="grausatisfacao" value="Ms"> Muito Satisfeito
+                </td>
+            </tr>
+
+            <tr>
+                <td id="pergunta">
+                    Quais melhorias podemos implementar a este produto?
+                    <input id="resposta" type="text" name="question4" maxlength="150">
+                </td>
+            </tr>
+
+            <tr>
+                <tfoot>
+                    <td>
+                        <div>
+                            <input id="botao" type='submit' name="limpar" value="Enviar" onclick = validar()>
+
+                        </div>
+                    </td>
+                    
+                </tfoot>
+            </tr>
+             
+         </tbody>
+     </table>
+</body>
+</html>

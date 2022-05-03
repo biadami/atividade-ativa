@@ -1,0 +1,62 @@
+h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 50px;
+
+    font-family: Arial;
+    font-size: 30px;
+
+}
+
+p{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    border-radius: 5px;
+}
+
+table{
+    width: 100%;
+    padding: 20px;
+}
+
+#title{
+    display: flex;
+    padding-bottom: 15px;
+
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#resposta{
+    width: 60%;
+}
+
+#faixaEtaria{
+    display: flex;
+}
+
+#pergunta{
+    font-family: Arial;
+    font-size: 15px;
+
+    padding-bottom: 15px;
+}
+
+#botao{
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: rgb(4, 10, 116);
+    color: #ffff;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+}
